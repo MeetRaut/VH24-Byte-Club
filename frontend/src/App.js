@@ -37,6 +37,7 @@ function App() {
       
       {/* Admin Path */}
       <Route path="/AdminPage" element={<AdminPage />} />
+      
       {/* Admin Path */}
       <Route path="/SignInUp" element={<SignUpIn />} />
     </Routes>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import UserDonations from '../AdminComponents/UserDonations';
 import InstituteRequirements from '../AdminComponents/InstituteReq';
-import MapComponent from '../AdminComponents/Map';
-
+import MapComponent from './NGOMap';
+import OrphanageMap from './Orphanage';
 const AdminPage = () => {
   const [activeComponent, setActiveComponent] = useState('donations');
 
@@ -12,8 +12,12 @@ const AdminPage = () => {
         return <UserDonations />;
       case 'requirements':
         return <InstituteRequirements />;
-      case 'map':
-        return <MapComponent />;
+      case 'NGO':
+        
+        return <MapComponent/>
+      case 'Orphanage':
+        return <OrphanageMap />;
+        
       default:
         return null;
     }
@@ -40,15 +44,15 @@ const AdminPage = () => {
           value={activeComponent} 
           onChange={handleDropdownChange} 
           style={{
-            backgroundColor: '#fff', // Set a contrasting background color
+            backgroundColor: '#fff', 
             border: 'none',
-            color: '#333', // Set a contrasting text color
+            color: '#333', 
             fontSize: '1rem',
             cursor: 'pointer',
             marginRight: '1rem',
             marginLeft: '1rem', 
-            padding: '0.5rem', // Add padding for better appearance
-            borderRadius: '4px', // Optional: add border radius
+            padding: '0.5rem', 
+            borderRadius: '4px', 
           }}
         >
           <option value="Users">Total Users</option>
@@ -57,12 +61,33 @@ const AdminPage = () => {
           <option value="requirements">Institute Requirements</option>
         </select>
 
-        <button onClick={() => setActiveComponent('Shop')} style={{ ...navButtonStyle, marginLeft: '1rem' }}>
+        <button onClick={() => setActiveComponent('Shop')} style={{ ...navButtonStyle,marginLeft:'1rem', marginRight: '2rem' }}>
           Shop Recommender
         </button>
         
-        <button onClick={() => setActiveComponent('map')} style={{ ...navButtonStyle, marginLeft: '1rem' }}>
-          Map
+        <select 
+          value={activeComponent} 
+          onChange={handleDropdownChange} 
+          style={{
+            backgroundColor: '#fff', 
+            border: 'none',
+            color: '#333', 
+            fontSize: '1rem',
+            cursor: 'pointer',
+            marginRight: '1rem',
+            marginLeft: '1rem', 
+            padding: '0.5rem', 
+            borderRadius: '4px', 
+          }}
+        >
+          <option value="NGO">NGO Map</option>
+          <option value="Orphanage">Orphanage</option>
+        </select>
+        <button onClick={() => setActiveComponent('Forecast')} style={{ ...navButtonStyle, marginRight: '2rem' }}>
+          Forecast
+        </button>
+        <button onClick={() => setActiveComponent('Purchase')} style={{ ...navButtonStyle, marginRight: '2rem' }}>
+          Purchase
         </button>
       </nav>
 

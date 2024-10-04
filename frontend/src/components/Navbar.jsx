@@ -27,10 +27,10 @@ function Navbar() {
                   About
                 </Link>
                 <Link
-                  to="//Institute/PostRequestPage"
+                  to="/Institute/PostRequestPage"
                   className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                 >
-                  PostRequestPage
+                  Post Request
                 </Link>
 
                 <Link

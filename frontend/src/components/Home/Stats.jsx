@@ -10,7 +10,7 @@ export default function Stats() {
         <p>Donors</p>
       </div>
       <div>
-        <h1 className="md:text-[40px] text-[25px] font-bold">₹200M</h1> 
+        <h1 className="md:text-[40px] text-[25px] font-bold">₹20Cr</h1> 
         <p>Money in funds</p>
       </div>
       <div>
