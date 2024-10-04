@@ -10,49 +10,56 @@ function Navbar() {
       <Container>
         <div className="flex items-center justify-between h-16">
           <div className="flex gap-4 items-center">
-            
             <img src={Image} alt="Logo" className="h-12 w-auto" />
-            <span className="text-xl font-bold text-gray-800">Samuhik Seva</span>
+            <span className="text-2xl font-bold text-gray-800">Samuhik Seva</span>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link
                   to="/"
-                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Home
                 </Link>
-
                 <Link
-                  to="/"
-                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Funding
-                </Link>
-                <Link
-                  to="/"
-                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  to="/About"
+                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                 >
                   About
                 </Link>
                 <Link
+                  to="//Institute/PostRequestPage"
+                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                >
+                  PostRequestPage
+                </Link>
+
+                <Link
+                  to="/Volunteer/DonationPage"
+                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-lg font-medium"
+                >
+                  Donate
+                </Link>
+                
+                <Link
                   to="/"
-                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Membership
                 </Link>
                 <Link
-                  to="/"
-                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  to="/Contact"
+                  className="hover:bg-button-primary hover:text-white px-3 py-2 rounded-md text-lg font-medium"
                 >
                   Contact
                 </Link>
+                
               </div>
             </div>
           </div>
 
-          <Link to="/">
-            <div className="hidden md:block hover:bg-button-primary px-4 py-1 rounded-xl">
-              Log In
+          <Link to="/SignInUp">
+            <div className="hidden md:block hover:bg-button-primary px-4 py-1 rounded-xl text-lg font-medium">
+              Sign In
             </div>
           </Link>
           <div className="-mr-2 flex md:hidden">
@@ -75,39 +82,39 @@ function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-black">
               <Link
                 to="/"
-                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-lg font-medium"
               >
                 Home
               </Link>
               <Link
                 to="/"
-                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-lg font-medium"
               >
                 Funding
               </Link>
               <Link
-                to="/"
-                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                to="/About"
+                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-lg font-medium"
               >
                 About
               </Link>
               <Link
                 to="/"
-                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-lg font-medium"
               >
                 Membership
               </Link>
               <Link
                 to="/"
-                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                className="hover:bg-primary-base hover:bg-button-primary hover:text-white block px-3 py-2 rounded-md text-lg font-medium"
               >
                 Contact
               </Link>
               <Link
-                to="/profile/neo"
-                className="hover:bg-primary-base bg-button-primary text-white block px-3 py-2 rounded-md text-base font-medium"
+                to="/SignInUp"
+                className="hover:bg-primary-base bg-button-primary text-white block px-3 py-2 rounded-md text-lg font-medium"
               >
-                Log In
+                Sign In
               </Link>
             </div>
           </div>

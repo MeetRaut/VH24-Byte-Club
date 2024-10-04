@@ -10,7 +10,7 @@ export default function Front() {
       <div className="sm:w-11/12 mx-auto">
         <div
           className={`py-8 sm:rounded-3xl relative w-full h-[620px] bg-cover lg:bg-center bg-no-repeat bg-left`}
-          style={{ backgroundImage: `url(${front_world})` }} // Use imported image here
+          style={{ backgroundImage: `url(${front_world})` }} 
         >
           <div className="absolute bottom-[24%] sm:left-[6%] left-[5%] flex items-center flex-wrap gap-4">
             {searchBar && (
